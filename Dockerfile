@@ -1,4 +1,4 @@
-FROM node:18.16.1-slim
+FROM node:16.20.1
 WORKDIR /app
 COPY . /app
 RUN npm run setup
