@@ -3,4 +3,4 @@ WORKDIR /app
 COPY . /app
 RUN npm run setup
 EXPOSE 3001
-CMD [ "node", "server/server.js" ]
+CMD [ "npm", "start" ]
