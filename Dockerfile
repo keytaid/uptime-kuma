@@ -1,6 +1,6 @@
 FROM node:16.20.1
-WORKDIR .
-COPY . .
+WORKDIR /app
+COPY . /app
 RUN npm install
 RUN npm run setup
 EXPOSE 3001
