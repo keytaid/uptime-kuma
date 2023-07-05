@@ -1,8 +1,8 @@
 FROM node:16.20.1
 RUN apt-get -y update
 RUN apt-get -y install git
-WORKDIR /app
-COPY . /app
+WORKDIR .
+COPY . .
 RUN npm install
 RUN npm run setup
 EXPOSE 3001
